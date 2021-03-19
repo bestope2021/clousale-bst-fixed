@@ -8,6 +8,7 @@
         "sp-api",
         "clousale"
     ],
+    "minimum-stability": "dev",
     "homepage": "http://www.clousale.com",
     "license": "MIT",
     "authors": [
