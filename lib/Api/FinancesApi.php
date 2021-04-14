@@ -302,7 +302,7 @@ class FinancesApi
         }
         // query params
         if (null !== $next_token) {
-            $queryParams['NextToken'] = ObjectSerializer::toQueryValue($next_token);
+            $headerParams['NextToken'] = ObjectSerializer::toQueryValue($next_token);
         }
 
         return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'GET', $httpBody);

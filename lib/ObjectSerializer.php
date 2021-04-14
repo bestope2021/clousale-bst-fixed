@@ -17,6 +17,8 @@
 
 namespace ClouSale\AmazonSellingPartnerAPI;
 
+use DateTime;
+
 /**
  * ObjectSerializer Class Doc Comment.
  *
@@ -291,27 +293,31 @@ class ObjectSerializer
             return $data;
         } else {
             // If a discriminator is defined and points to a valid subclass, use it.
-            $discriminator = $class::DISCRIMINATOR;
-            if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '{{invokerPackage}}\Model\\'.$data->{$discriminator};
-                if (is_subclass_of($subclass, $class)) {
-                    $class = $subclass;
+            if ($class === '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime') {
+                $instance = new \DateTime();
+            } else {
+                $discriminator = $class::DISCRIMINATOR;
+                if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
+                    $subclass = '{{invokerPackage}}\Model\\'.$data->{$discriminator};
+                    if (is_subclass_of($subclass, $class)) {
+                        $class = $subclass;
+                    }
+                }
+        
+                $instance = new $class();
+                foreach ($instance::swaggerTypes() as $property => $type) {
+                    $propertySetter = $instance::setters()[$property];
+        
+                    if (!isset($propertySetter) || !isset($data->{$instance::attributeMap()[$property]})) {
+                        continue;
+                    }
+        
+                    $propertyValue = $data->{$instance::attributeMap()[$property]};
+                    if (isset($propertyValue)) {
+                        $instance->$propertySetter(self::deserialize($propertyValue, $type, null));
+                    }
                 }
             }
-            $instance = new $class();
-            foreach ($instance::swaggerTypes() as $property => $type) {
-                $propertySetter = $instance::setters()[$property];
-
-                if (!isset($propertySetter) || !isset($data->{$instance::attributeMap()[$property]})) {
-                    continue;
-                }
-
-                $propertyValue = $data->{$instance::attributeMap()[$property]};
-                if (isset($propertyValue)) {
-                    $instance->$propertySetter(self::deserialize($propertyValue, $type, null));
-                }
-            }
-
             return $instance;
         }
     }
