@@ -2,7 +2,7 @@
 /**
  * DefaultApi.
  *
- * @author   Stefan Neuhaus / ClouSale
+ * @author    Stefan Neuhaus / ClouSale
  */
 
 /**
