@@ -269,7 +269,25 @@ class ShippingApi
 
         return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'POST', $httpBody);
     }
-
+    /**新版下单接口
+     * @param $body
+     * @return Request
+     * @throws \Exception
+     */
+    protected function createShipmentRequests($body)
+    {
+        // verify the required parameter 'body' is set
+        if (null === $body || (is_array($body) && 0 === count($body))) {
+            throw new \InvalidArgumentException('Missing the required parameter $body when calling createShipment');
+        }
+        $resourcePath='/shipping/v2/shipments/directPurchase';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = $body;
+        $multipart = false;
+        return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'POST', $httpBody);
+    }
     /**
      * Operation getAccount.
      *
@@ -548,7 +566,38 @@ class ShippingApi
 
         return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'GET', $httpBody);
     }
+    /**获取面单(新版的)
+     * @param $shipment_id
+     * @param $clientId
+     * @param $format
+     * @return Request
+     * @throws \Exception
+     */
+    protected function getShipmentRequestss($shipment_id,$clientId,$format)
+    {
+        // verify the required parameter 'shipment_id' is set
+        if (null === $shipment_id || (is_array($shipment_id) && 0 === count($shipment_id))) {
+            throw new \InvalidArgumentException('Missing the required parameter $shipment_id when calling getShipment');
+        }
 
+        $resourcePath='/shipping/v2/shipments/{shipmentId}/documents';
+        $formParams = [];
+        $queryParams = ['packageClientReferenceId'=>$clientId,'format'=>$format];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+        // path params
+        if (null !== $shipment_id) {
+            $resourcePath = str_replace(
+                '{'.'shipmentId'.'}',
+                ObjectSerializer::toPathValue($shipment_id),
+                $resourcePath
+            );
+        }
+
+        return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'GET', $httpBody);
+    }
     /**
      * Operation getTrackingInformation.
      *
@@ -652,7 +701,26 @@ class ShippingApi
 
         return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'GET', $httpBody);
     }
+    /**新版获取轨迹
+     * @param $tracking_id
+     * @return Request
+     */
+    protected function getTrackingInformationRequests($carrierId,$tracking_id)
+    {
+        // verify the required parameter 'tracking_id' is set
+        if (null === $tracking_id || (is_array($tracking_id) && 0 === count($tracking_id))) {
+            throw new \InvalidArgumentException('Missing the required parameter $tracking_id when calling getTrackingInformation');
+        }
 
+        $resourcePath='/shipping/v2/tracking';
+        $formParams = [];
+        $queryParams = ['carrierId'=>$carrierId,'trackingId'=>$tracking_id];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+        return $this->generateRequest($multipart, $formParams, $queryParams, $resourcePath, $headerParams, 'GET', $httpBody);
+    }
     /**
      * Operation purchaseLabels.
      *
