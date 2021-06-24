@@ -72,7 +72,6 @@ class Signature
         $algorithm = 'AWS4-HMAC-SHA256';
         $amzdate = gmdate('Ymd\THis\Z');
         $date = substr($amzdate, 0, 8);
-
         // Prepare payload
         if (is_array($data)) {
             $param = json_encode($data);
