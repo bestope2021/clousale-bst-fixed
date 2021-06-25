@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf839b2e-0742-40d9-a308-ffe5479e4b84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Api/ShippingApiNew.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Api/ShippingApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ShippingApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Helpers/SellingPartnerApiRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Helpers/SellingPartnerApiRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SellingPartnerEndpoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SellingPartnerEndpoint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SellingPartnerRegion.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SellingPartnerRegion.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +15,18 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1uO8zHdf4dUK2XHCAllRJaMxSJF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +35,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/Api" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lnmp\www\clousale-bst-fixed\lib\Api" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,11 +53,21 @@
       <option name="presentableId" value="Default" />
       <updated>1624525535474</updated>
       <workItem from="1624525536841" duration="768000" />
-      <workItem from="1624526322825" duration="3708000" />
+      <workItem from="1624526322825" duration="5808000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1624530630378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624530630378" />
+    <state x="769" y="359" key="git4idea.ui.GitTagDialog" timestamp="1624530578403">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="359" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624530578403" />
   </component>
 </project>
