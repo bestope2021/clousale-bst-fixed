@@ -18,6 +18,7 @@ namespace ClouSale\AmazonSellingPartnerAPI\Api;
 use ClouSale\AmazonSellingPartnerAPI\Configuration;
 use ClouSale\AmazonSellingPartnerAPI\HeaderSelector;
 use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequest;
+use ClouSale\AmazonSellingPartnerAPI\Helpers\SellingPartnerApiRequests;
 use ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentInbound\GetShipmentsResponse;
 use ClouSale\AmazonSellingPartnerAPI\Models\Shipping\CancelShipmentResponse;
 use ClouSale\AmazonSellingPartnerAPI\Models\Shipping\CreateShipmentResponse;
@@ -39,7 +40,7 @@ use GuzzleHttp\Psr7\Request;
  */
 class ShippingApiNew
 {
-    use SellingPartnerApiRequest;
+    use SellingPartnerApiRequests;
 
     /**
      * @var ClientInterface
