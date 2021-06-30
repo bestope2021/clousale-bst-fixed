@@ -163,7 +163,7 @@ trait SellingPartnerApiRequests
             try {
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
-                return [$e->getResponse()->getBody()->getContents()];
+                return [$e->getResponse()];
                 throw new ApiException("[{$e->getCode()}] {$e->getMessage()}", $e->getCode(), $e->getResponse() ? $e->getResponse()->getHeaders() : null, $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null);
             }
             $statusCode = $response->getStatusCode();

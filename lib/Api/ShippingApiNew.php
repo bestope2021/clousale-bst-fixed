@@ -59,7 +59,8 @@ class ShippingApiNew
 
     public function __construct(Configuration $config)
     {
-        $this->client = new Client();
+        //$this->client = new Client();
+        $this->client = new Client(['verify' =>false]);
         $this->config = $config;
         $this->headerSelector = new HeaderSelector();
     }
