@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf839b2e-0742-40d9-a308-ffe5479e4b84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Api/ShippingApiNew.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ShippingApiNew.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Helpers/SellingPartnerApiRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Helpers/SellingPartnerApiRequests.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,10 +35,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lnmp\www\clousale-bst-fixed\lib" />
       <recent name="D:\lnmp\www\clousale-bst-fixed\lib\Helpers" />
       <recent name="D:\lnmp\www\clousale-bst-fixed\lib\Api" />
     </key>
@@ -56,7 +56,7 @@
       <updated>1624525535474</updated>
       <workItem from="1624525536841" duration="768000" />
       <workItem from="1624526322825" duration="9032000" />
-      <workItem from="1625022750983" duration="1045000" />
+      <workItem from="1625022750983" duration="1819000" />
     </task>
     <servers />
   </component>

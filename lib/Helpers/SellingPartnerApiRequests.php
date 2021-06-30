@@ -163,13 +163,13 @@ trait SellingPartnerApiRequests
             try {
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
-                return [$e->getResponse()];
+                return [$e->getResponse()->getBody()->getContents()];
                 throw new ApiException("[{$e->getCode()}] {$e->getMessage()}", $e->getCode(), $e->getResponse() ? $e->getResponse()->getHeaders() : null, $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null);
             }
             $statusCode = $response->getStatusCode();
 
             if ($statusCode < 200 || $statusCode > 299) {
-                return [$response->getBody()];
+                return ['Error connecting to the API'.$statusCode];
                 throw new ApiException(sprintf('[%d] Error connecting to the API (%s)', $statusCode, $request->getUri()), $statusCode, $response->getHeaders(), $response->getBody());
             }
 
