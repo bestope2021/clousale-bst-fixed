@@ -56,7 +56,7 @@
       <updated>1624525535474</updated>
       <workItem from="1624525536841" duration="768000" />
       <workItem from="1624526322825" duration="9032000" />
-      <workItem from="1625022750983" duration="1819000" />
+      <workItem from="1625022750983" duration="3314000" />
     </task>
     <servers />
   </component>
@@ -64,13 +64,13 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625023126711">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625048324106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625023126711" />
-    <state x="769" y="359" key="git4idea.ui.GitTagDialog" timestamp="1625023041101">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625048324106" />
+    <state x="769" y="359" key="git4idea.ui.GitTagDialog" timestamp="1625048316926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="359" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625023041101" />
+    <state x="769" y="359" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625048316926" />
   </component>
 </project>

@@ -163,7 +163,7 @@ trait SellingPartnerApiRequests
             try {
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
-                return [$e->getResponse()->getBody()->getContents()];
+                return ['报错头部是：【'.json_encode($e->getResponse()->getHeaders(),JSON_UNESCAPED_UNICODE).'】'.PHP_EOL.'报错内容是：【'.$e->getResponse()->getBody()->getContents().'】'];
                 throw new ApiException("[{$e->getCode()}] {$e->getMessage()}", $e->getCode(), $e->getResponse() ? $e->getResponse()->getHeaders() : null, $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null);
             }
             $statusCode = $response->getStatusCode();
