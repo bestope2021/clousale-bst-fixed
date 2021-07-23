@@ -52,9 +52,10 @@ class FeedsApi
      */
     protected $headerSelector;
 
-    public function __construct(Configuration $config)
+    public function __construct(Configuration $config,$other_config=null)
     {
-        $this->client = new Client();
+        $proxy_config = $other_config['proxy']?['proxy' => $other_config['proxy']]:[];
+        $this->client = new Client($proxy_config);
         $this->config = $config;
         $this->headerSelector = new HeaderSelector();
     }
