@@ -97,8 +97,8 @@ class OrdersApi
     public function getOrderWithHttpInfo($order_id)
     {
         $request = $this->getOrderRequest($order_id);
-
-        return $this->sendRequest($request, GetOrderResponse::class);
+        return $this->sendRequest($request, "object");
+      //  return $this->sendRequest($request, GetOrderResponse::class);
     }
 
     /**
@@ -133,8 +133,8 @@ class OrdersApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderResponse';
         $request = $this->getOrderRequest($order_id);
-
-        return $this->sendRequestAsync($request, GetOrderResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+       // return $this->sendRequestAsync($request, GetOrderResponse::class);
     }
 
     /**
@@ -203,8 +203,8 @@ class OrdersApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderAddressResponse';
         $request = $this->getOrderAddressRequest($order_id);
-
-        return $this->sendRequest($request, GetOrderAddressResponse::class);
+        return $this->sendRequest($request,  "object");
+      //  return $this->sendRequest($request, GetOrderAddressResponse::class);
     }
 
     /**
@@ -238,8 +238,8 @@ class OrdersApi
     public function getOrderAddressAsyncWithHttpInfo($order_id)
     {
         $request = $this->getOrderAddressRequest($order_id);
-
-        return $this->sendRequestAsync($request, GetOrderAddressResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        //return $this->sendRequestAsync($request, GetOrderAddressResponse::class);
     }
 
     /**
@@ -307,8 +307,8 @@ class OrdersApi
     public function getOrderBuyerInfoWithHttpInfo($order_id)
     {
         $request = $this->getOrderBuyerInfoRequest($order_id);
-
-        return $this->sendRequest($request, GetOrderBuyerInfoResponse::class);
+        return $this->sendRequest($request,  "object");
+       // return $this->sendRequest($request, GetOrderBuyerInfoResponse::class);
     }
 
     /**
@@ -342,8 +342,8 @@ class OrdersApi
     public function getOrderBuyerInfoAsyncWithHttpInfo($order_id)
     {
         $request = $this->getOrderBuyerInfoRequest($order_id);
-
-        return $this->sendRequestAsync($request, GetOrderBuyerInfoResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+       // return $this->sendRequestAsync($request, GetOrderBuyerInfoResponse::class);
     }
 
     /**
@@ -413,8 +413,8 @@ class OrdersApi
     public function getOrderItemsWithHttpInfo($order_id, $next_token = null)
     {
         $request = $this->getOrderItemsRequest($order_id, $next_token);
-
-        return $this->sendRequest($request, GetOrderItemsResponse::class);
+        return $this->sendRequest($request,  "object");
+       // return $this->sendRequest($request, GetOrderItemsResponse::class);
     }
 
     /**
@@ -451,8 +451,8 @@ class OrdersApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsResponse';
         $request = $this->getOrderItemsRequest($order_id, $next_token);
-
-        return $this->sendRequestAsync($request, GetOrderItemsResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+       // return $this->sendRequestAsync($request, GetOrderItemsResponse::class);
     }
 
     /**
@@ -528,8 +528,8 @@ class OrdersApi
     public function getOrderItemsBuyerInfoWithHttpInfo($order_id, $next_token = null)
     {
         $request = $this->getOrderItemsBuyerInfoRequest($order_id, $next_token);
-
-        return $this->sendRequest($request, GetOrderItemsBuyerInfoResponse::class);
+        return $this->sendRequest($request,  "object");
+       // return $this->sendRequest($request, GetOrderItemsBuyerInfoResponse::class);
     }
 
     /**
@@ -566,8 +566,8 @@ class OrdersApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrderItemsBuyerInfoResponse';
         $request = $this->getOrderItemsBuyerInfoRequest($order_id, $next_token);
-
-        return $this->sendRequestAsync($request, GetOrderItemsBuyerInfoResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+       // return $this->sendRequestAsync($request, GetOrderItemsBuyerInfoResponse::class);
     }
 
     /**
@@ -668,8 +668,8 @@ class OrdersApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
-
-        return $this->sendRequest($request, GetOrdersResponse::class);
+        return $this->sendRequest($request,  "object");
+        //return $this->sendRequest($request, GetOrdersResponse::class);
     }
 
     /**
@@ -730,8 +730,8 @@ class OrdersApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\Orders\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
-
-        return $this->sendRequestAsync($request, GetOrdersResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+      //  return $this->sendRequestAsync($request, GetOrdersResponse::class);
     }
 
     /**
