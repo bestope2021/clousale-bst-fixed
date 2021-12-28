@@ -105,8 +105,8 @@ class FbaOutboundApi
     public function cancelFulfillmentOrderWithHttpInfo($seller_fulfillment_order_id)
     {
         $request = $this->cancelFulfillmentOrderRequest($seller_fulfillment_order_id);
-
-        return $this->sendRequest($request, CancelFulfillmentOrderResponse::class);
+        return $this->sendRequest($request,  "object");
+        //return $this->sendRequest($request, CancelFulfillmentOrderResponse::class);
     }
 
     /**
@@ -140,8 +140,8 @@ class FbaOutboundApi
     public function cancelFulfillmentOrderAsyncWithHttpInfo($seller_fulfillment_order_id)
     {
         $request = $this->cancelFulfillmentOrderRequest($seller_fulfillment_order_id);
-
-        return $this->sendRequestAsync($request, CancelFulfillmentOrderResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        // return $this->sendRequestAsync($request, CancelFulfillmentOrderResponse::class);
     }
 
     /**
@@ -209,8 +209,8 @@ class FbaOutboundApi
     public function createFulfillmentOrderWithHttpInfo($body)
     {
         $request = $this->createFulfillmentOrderRequest($body);
-
-        return $this->sendRequest($request, CreateFulfillmentOrderResponse::class);
+        return $this->sendRequest($request,  "object");
+        // return $this->sendRequest($request, CreateFulfillmentOrderResponse::class);
     }
 
     /**
@@ -244,8 +244,8 @@ class FbaOutboundApi
     public function createFulfillmentOrderAsyncWithHttpInfo($body)
     {
         $request = $this->createFulfillmentOrderRequest($body);
-
-        return $this->sendRequestAsync($request, CreateFulfillmentOrderResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        // return $this->sendRequestAsync($request, CreateFulfillmentOrderResponse::class);
     }
 
     /**
@@ -306,8 +306,8 @@ class FbaOutboundApi
     public function createFulfillmentReturnWithHttpInfo($body, $seller_fulfillment_order_id)
     {
         $request = $this->createFulfillmentReturnRequest($body, $seller_fulfillment_order_id);
-
-        return $this->sendRequest($request, CreateFulfillmentReturnResponse::class);
+        return $this->sendRequest($request,  "object");
+        // return $this->sendRequest($request, CreateFulfillmentReturnResponse::class);
     }
 
     /**
@@ -343,8 +343,8 @@ class FbaOutboundApi
     public function createFulfillmentReturnAsyncWithHttpInfo($body, $seller_fulfillment_order_id)
     {
         $request = $this->createFulfillmentReturnRequest($body, $seller_fulfillment_order_id);
-
-        return $this->sendRequestAsync($request, CreateFulfillmentReturnResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        // return $this->sendRequestAsync($request, CreateFulfillmentReturnResponse::class);
     }
 
     /**
@@ -421,8 +421,8 @@ class FbaOutboundApi
     public function getFeatureInventoryWithHttpInfo($marketplace_id, $feature_name, $next_token = null)
     {
         $request = $this->getFeatureInventoryRequest($marketplace_id, $feature_name, $next_token);
-
-        return $this->sendRequest($request, GetFeatureInventoryResponse::class);
+        return $this->sendRequest($request,  "object");
+        // return $this->sendRequest($request, GetFeatureInventoryResponse::class);
     }
 
     /**
@@ -460,8 +460,8 @@ class FbaOutboundApi
     public function getFeatureInventoryAsyncWithHttpInfo($marketplace_id, $feature_name, $next_token = null)
     {
         $request = $this->getFeatureInventoryRequest($marketplace_id, $feature_name, $next_token);
-
-        return $this->sendRequestAsync($request, GetFeatureInventoryResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        //return $this->sendRequestAsync($request, GetFeatureInventoryResponse::class);
     }
 
     /**
@@ -548,8 +548,8 @@ class FbaOutboundApi
     public function getFeatureSKUWithHttpInfo($marketplace_id, $feature_name, $seller_sku)
     {
         $request = $this->getFeatureSKURequest($marketplace_id, $feature_name, $seller_sku);
-
-        return $this->sendRequest($request, GetFeatureSkuResponse::class);
+        return $this->sendRequest($request,  "object");
+        // return $this->sendRequest($request, GetFeatureSkuResponse::class);
     }
 
     /**
@@ -587,8 +587,8 @@ class FbaOutboundApi
     public function getFeatureSKUAsyncWithHttpInfo($marketplace_id, $feature_name, $seller_sku)
     {
         $request = $this->getFeatureSKURequest($marketplace_id, $feature_name, $seller_sku);
-
-        return $this->sendRequestAsync($request, GetFeatureSkuResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        // return $this->sendRequestAsync($request, GetFeatureSkuResponse::class);
     }
 
     /**
@@ -679,8 +679,8 @@ class FbaOutboundApi
     public function getFeaturesWithHttpInfo($marketplace_id)
     {
         $request = $this->getFeaturesRequest($marketplace_id);
-
-        return $this->sendRequest($request, GetFeaturesResponse::class);
+        return $this->sendRequest($request,  "object");
+        //return $this->sendRequest($request, GetFeaturesResponse::class);
     }
 
     /**
@@ -714,8 +714,8 @@ class FbaOutboundApi
     public function getFeaturesAsyncWithHttpInfo($marketplace_id)
     {
         $request = $this->getFeaturesRequest($marketplace_id);
-
-        return $this->sendRequestAsync($request, GetFeaturesResponse::class);
+        return $this->sendRequestAsync($request, "object");
+        // return $this->sendRequestAsync($request, GetFeaturesResponse::class);
     }
 
     /**
@@ -779,8 +779,8 @@ class FbaOutboundApi
     public function getFulfillmentOrderWithHttpInfo($seller_fulfillment_order_id)
     {
         $request = $this->getFulfillmentOrderRequest($seller_fulfillment_order_id);
-
-        return $this->sendRequest($request, GetFulfillmentOrderResponse::class);
+        return $this->sendRequest($request,  "object");
+        //  return $this->sendRequest($request, GetFulfillmentOrderResponse::class);
     }
 
     /**
@@ -814,8 +814,8 @@ class FbaOutboundApi
     public function getFulfillmentOrderAsyncWithHttpInfo($seller_fulfillment_order_id)
     {
         $request = $this->getFulfillmentOrderRequest($seller_fulfillment_order_id);
-
-        return $this->sendRequestAsync($request, GetFulfillmentOrderResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        //  return $this->sendRequestAsync($request, GetFulfillmentOrderResponse::class);
     }
 
     /**
@@ -883,8 +883,8 @@ class FbaOutboundApi
     public function getFulfillmentPreviewWithHttpInfo($body)
     {
         $request = $this->getFulfillmentPreviewRequest($body);
-
-        return $this->sendRequest($request, GetFulfillmentPreviewResponse::class);
+        return $this->sendRequest($request,  "object");
+        // return $this->sendRequest($request, GetFulfillmentPreviewResponse::class);
     }
 
     /**
@@ -918,8 +918,8 @@ class FbaOutboundApi
     public function getFulfillmentPreviewAsyncWithHttpInfo($body)
     {
         $request = $this->getFulfillmentPreviewRequest($body);
-
-        return $this->sendRequestAsync($request, GetFulfillmentPreviewResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        // return $this->sendRequestAsync($request, GetFulfillmentPreviewResponse::class);
     }
 
     /**
@@ -978,8 +978,8 @@ class FbaOutboundApi
     public function getPackageTrackingDetailsWithHttpInfo($package_number)
     {
         $request = $this->getPackageTrackingDetailsRequest($package_number);
-
-        return $this->sendRequest($request, GetPackageTrackingDetailsResponse::class);
+        return $this->sendRequest($request,  "object");
+        // return $this->sendRequest($request, GetPackageTrackingDetailsResponse::class);
     }
 
     /**
@@ -1013,8 +1013,8 @@ class FbaOutboundApi
     public function getPackageTrackingDetailsAsyncWithHttpInfo($package_number)
     {
         $request = $this->getPackageTrackingDetailsRequest($package_number);
-
-        return $this->sendRequestAsync($request, GetPackageTrackingDetailsResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        // return $this->sendRequestAsync($request, GetPackageTrackingDetailsResponse::class);
     }
 
     /**
@@ -1080,8 +1080,8 @@ class FbaOutboundApi
     public function listAllFulfillmentOrdersWithHttpInfo($query_start_date = null, $next_token = null)
     {
         $request = $this->listAllFulfillmentOrdersRequest($query_start_date, $next_token);
-
-        return $this->sendRequest($request, ListAllFulfillmentOrdersResponse::class);
+        return $this->sendRequest($request,  "object");
+        //  return $this->sendRequest($request, ListAllFulfillmentOrdersResponse::class);
     }
 
     /**
@@ -1118,8 +1118,8 @@ class FbaOutboundApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ListAllFulfillmentOrdersResponse';
         $request = $this->listAllFulfillmentOrdersRequest($query_start_date, $next_token);
-
-        return $this->sendRequestAsync($request, ListAllFulfillmentOrdersResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        // return $this->sendRequestAsync($request, ListAllFulfillmentOrdersResponse::class);
     }
 
     /**
@@ -1189,8 +1189,8 @@ class FbaOutboundApi
     public function listReturnReasonCodesWithHttpInfo($seller_sku, $language, $marketplace_id = null, $seller_fulfillment_order_id = null)
     {
         $request = $this->listReturnReasonCodesRequest($seller_sku, $language, $marketplace_id, $seller_fulfillment_order_id);
-
-        return $this->sendRequest($request, ListReturnReasonCodesResponse::class);
+        return $this->sendRequest($request,  "object");
+        //return $this->sendRequest($request, ListReturnReasonCodesResponse::class);
     }
 
     /**
@@ -1231,8 +1231,8 @@ class FbaOutboundApi
     {
         $returnType = '\ClouSale\AmazonSellingPartnerAPI\Models\FulfillmentOutbound\ListReturnReasonCodesResponse';
         $request = $this->listReturnReasonCodesRequest($seller_sku, $language, $marketplace_id, $seller_fulfillment_order_id);
-
-        return $this->sendRequestAsync($request, ListReturnReasonCodesResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        //  return $this->sendRequestAsync($request, ListReturnReasonCodesResponse::class);
     }
 
     /**
@@ -1317,8 +1317,8 @@ class FbaOutboundApi
     public function updateFulfillmentOrderWithHttpInfo($body, $seller_fulfillment_order_id)
     {
         $request = $this->updateFulfillmentOrderRequest($body, $seller_fulfillment_order_id);
-
-        return $this->sendRequest($request, UpdateFulfillmentOrderResponse::class);
+        return $this->sendRequest($request,  "object");
+        // return $this->sendRequest($request, UpdateFulfillmentOrderResponse::class);
     }
 
     /**
@@ -1354,8 +1354,8 @@ class FbaOutboundApi
     public function updateFulfillmentOrderAsyncWithHttpInfo($body, $seller_fulfillment_order_id)
     {
         $request = $this->updateFulfillmentOrderRequest($body, $seller_fulfillment_order_id);
-
-        return $this->sendRequestAsync($request, UpdateFulfillmentOrderResponse::class);
+        return $this->sendRequestAsync($request,  "object");
+        //return $this->sendRequestAsync($request, UpdateFulfillmentOrderResponse::class);
     }
 
     /**
