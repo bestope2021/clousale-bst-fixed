@@ -54,7 +54,7 @@ class FeedsApi
 
     public function __construct(Configuration $config,$other_config=null)
     {
-        $proxy_config = $other_config['proxy']?['proxy' => $other_config['proxy']]:[];
+        $proxy_config = isset($other_config['proxy'])?['proxy' => $other_config['proxy']]:[];
         $this->client = new Client($proxy_config);
         $this->config = $config;
         $this->headerSelector = new HeaderSelector();
