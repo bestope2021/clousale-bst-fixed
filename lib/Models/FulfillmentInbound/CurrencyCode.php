@@ -30,9 +30,16 @@ class CurrencyCode
     /**
      * Possible values of this enum.
      */
-    const USD = 'USD';
-    const GBP = 'GBP';
-
+    const USD = 'USD';//美国
+    const GBP = 'GBP';//英国
+    const EUR = 'EUR';//欧洲 德国 西班牙 意大利 法国
+    const CAD = 'CAD';//加拿大
+    const AUD = 'AUD';//澳洲
+    const JPY = 'JPY';//日元
+    const PLN = 'PLN';//波兰兹罗提
+    const CZK = 'CZK';//捷克
+    const IDR = 'IDR';//印度尼西亚币
+    const SGD = 'SGD';//新加坡元;
     /**
      * Gets allowable values of the enum.
      *
@@ -42,6 +49,15 @@ class CurrencyCode
     {
         return [
             self::USD,
-self::GBP,        ];
+            self::GBP,
+            self::EUR,
+            self::CAD,
+            self::AUD,
+            self::JPY,
+            self::PLN,
+            self::CZK,
+            self::IDR,
+            self::SGD,
+        ];
     }
 }
